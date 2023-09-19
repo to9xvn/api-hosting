@@ -36,7 +36,7 @@ Kết quả trả về nếu thất bại
 # api check các gói đang bán
 gửi request tới link bên dưới và thay email của bạn vào
 ```
-https://webapi.dailysieure.com/dichvu/api-hosting/gia.html?email=admin
+https://dailysieure.net/dichvu/api-hosting/gia.html?email=admin@gmail.com
 ```
 kết quả trả về dạng 
 ```
