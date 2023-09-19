@@ -2,6 +2,7 @@
 
 # api mua host
 gửi request tới https://dailysieure.net/dichvu/api-hosting/mua.html?email=admin@gmail.com&key=123123&tenmien=domain.com&goi=VN1
+
  status trả về 2 là thành công, 1 là thất bại.
 
 kết quả trả về nếu thành công  
