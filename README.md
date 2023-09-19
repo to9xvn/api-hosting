@@ -1,7 +1,7 @@
 # api-hosting
 
 # api mua host
-gửi request tới
+gửi request tới link bên dưới và thay email và key api của bạn
 ```
 https://dailysieure.net/dichvu/api-hosting/mua.html?email=admin@gmail.com&key=123123&tenmien=domain.com&goi=VN1
 ```
