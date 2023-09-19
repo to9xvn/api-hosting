@@ -33,6 +33,23 @@ Kết quả trả về nếu thất bại
 
 
 
-# api gia hạn
-
-đang cập nhật
+# api check các gói đang bán
+gửi request tới link bên dưới và thay email của bạn vào
+```
+https://webapi.dailysieure.com/dichvu/api-hosting/gia.html?email=admin
+```
+kết quả trả về dạng 
+```
+[
+  {
+    "goi": "VN1",
+    "gia": "10000",
+    "tinhtrang": "ON"
+  },
+  {
+    "goi": "VN2",
+    "gia": "20000",
+    "tinhtrang": "OFF"
+  }
+]
+```
