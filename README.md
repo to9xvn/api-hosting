@@ -16,7 +16,7 @@ kết quả trả về nếu thành công ```{
     "exp": "1697705986"
   }
 }
-```
+`
 
 Kết quả trả về nếu thất bại ```{
   "status": "1",
