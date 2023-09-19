@@ -1,7 +1,8 @@
 # api-hosting
 
-#mua host
+# api mua host
 gửi request tới https://dailysieure.net/dichvu/api-hosting/mua.html?email=admin@gmail.com&key=123123&tenmien=domain.com&goi=VN1
+ status trả về 2 là thành công, 1 là thất bại.
 
 kết quả trả về nếu thành công `{
   "status": "2",
@@ -17,3 +18,13 @@ kết quả trả về nếu thành công `{
 }
 `
 
+Kết quả trả về nếu thất bại `{
+  "status": "1",
+  "msg": "Thông tin tích hợp API chưa chính xác!"
+} `
+
+
+
+# api gia hạn
+
+đang cập nhật
