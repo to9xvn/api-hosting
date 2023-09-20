@@ -7,7 +7,7 @@ https://dailysieure.net/dichvu/api-hosting/mua.html?email=admin@gmail.com&key=12
 ```
  status trả về 2 là thành công, 1 là thất bại.  
 
-kết quả trả về nếu thành công  
+kết quả trả về nếu thành công, hãy lưu lại giá trị `tranid` để sau này quản lý host của bạn!
 ```
 {
   "status": "2",
@@ -109,7 +109,7 @@ trong đó những thứ quan trọng như `exp` sẽ cho ta biết ngày hết 
 
 
 # api reset host
-API này sẽ giúp xoá host và tạo lại (giữ nguyên hạn sử dụng host). để fix một số lỗi trong quá trình sử dụng host!  
+API này sẽ giúp xoá host và tạo lại (giữ nguyên hạn sử dụng host).Chức năng này tạo ra để fix một số lỗi trong quá trình sử dụng host!  
 gửi request tới link bên dưới và thay các thông tin của bạn vào
 ```
 https://dailysieure.net/dichvu/api-hosting/reset.html?email=admin&key=123123&tranid=999999
@@ -132,3 +132,26 @@ nếu thành công, kết quả trả về sẽ có dạng
 }
 ```
 
+# api reset mật khẩu của một host
+API này sẽ giúp đặt lại mật khẩu host!  
+gửi request tới link bên dưới và thay các thông tin của bạn vào
+```
+https://dailysieure.net/dichvu/api-hosting/resetpassword.html?email=admin&key=123123&tranid=999999
+```
+nếu thành công, kết quả trả về sẽ có dạng 
+```
+{
+  "status": "2",
+  "msg": "Mật khẩu của bạn đã được reset, thông tin trong json info! Nếu vẫn không đăng nhập được bằng mật khẩu vừa reset, hãy thử reset lại lần nữa!",
+  "info": {
+    "tk": "a1695184940",
+    "domain": "domain.com",
+    "gia": "10000",
+    "ip": "103.153.64.233",
+    "tranid": "116951849407099",
+    "trangthai": "1",
+    "noidung": "",
+    "newpassword": "AZa100536888"
+  }
+}
+```
