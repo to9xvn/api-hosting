@@ -107,3 +107,29 @@ nếu thành công, kết quả trả về dạng
 ```
 trong đó những thứ quan trọng như `exp` sẽ cho ta biết ngày hết hạn cũ, `expnew` sẽ là ngày hết hạn mới!
 
+
+# api reset host
+API này sẽ giúp xoá host và tạo lại (giữ nguyên hạn sử dụng host). để fix một số lỗi trong quá trình sử dụng host!  
+gửi request tới link bên dưới và thay các thông tin của bạn vào
+```
+https://dailysieure.net/dichvu/api-hosting/reset.html?email=admin&key=123123&tranid=999999
+```
+nếu thành công, kết quả trả về sẽ có dạng 
+```
+{
+  "status": "2",
+  "msg": "Đã tạo yêu cầu reset host, chờ 1 đến 10 phút để hệ thống xử lý!",
+  "info": {
+    "tk": "a1695184940",
+    "domain": "domain.com",
+    "gia": "10000",
+    "ip": "103.153.64.233",
+    "tranid": "116951849407099",
+    "trangthai": "1",
+    "noidung": "",
+    "exp": "1697775414",
+    "expnew": ""
+  }
+}
+```
+
