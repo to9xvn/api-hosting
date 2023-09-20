@@ -155,3 +155,17 @@ nếu thành công, kết quả trả về sẽ có dạng
   }
 }
 ```
+
+# api xoá hẳn host
+API này sẽ giúp bạn xoá host để mua gói mới, tất nhiên điều này sẽ không được hoàn tiền!  
+gửi request tới link bên dưới và thay các thông tin của bạn vào
+```
+https://dailysieure.net/dichvu/api-hosting/delete.html?email=admin&key=123123&tranid=999999
+```
+nếu thành công, kết quả trả về sẽ có dạng 
+```
+{
+  "status": "2",
+  "msg": "Host của bạn đã bị xoá thành công! Bạn không được hoàn tiền cho hành động này!"
+}
+```
