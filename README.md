@@ -127,8 +127,7 @@ nếu thành công, kết quả trả về sẽ có dạng
     "tranid": "116951849407099",
     "trangthai": "1",
     "noidung": "",
-    "exp": "1697775414",
-    "expnew": ""
+    "exp": "1697775414"
   }
 }
 ```
