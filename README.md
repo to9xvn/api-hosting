@@ -77,6 +77,6 @@ nếu thành công, kết quả trả về dạng
   }
 }
 ```
-trong đó trangthai sẽ cho biết trạng thái khoá hay hoạt động của host. `"trangthai": "1"` là đang hoạt động, 3 là bị xoá vĩnh viễn, 5 là chờ reset, 6 là đã hoàn tiền, 2 là đang tạm khoá do hết hạn hoặc vi phạm điều khoản, nếu vi phạm thì `"noidung"` sẽ có ghi. 
+trong đó những thứ quan trọng như `exp` sẽ cho ta biết ngày hết hạn, `trangthai` sẽ cho biết trạng thái khoá hay hoạt động của host. `"trangthai": "1"` là đang hoạt động, 3 là bị xoá vĩnh viễn, 5 là chờ reset, 6 là đã hoàn tiền, 2 là đang tạm khoá do hết hạn hoặc vi phạm điều khoản, nếu vi phạm thì `"noidung"` sẽ có ghi. 
 
 
