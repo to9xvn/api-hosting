@@ -5,7 +5,7 @@ gửi request tới link bên dưới và thay email và key api của bạn
 ```
 https://dailysieure.net/dichvu/api-hosting/mua.html?email=admin@gmail.com&key=123123&tenmien=domain.com&goi=VN1
 ```
- status trả về 2 là thành công, 1 là thất bại.<space>
+ status trả về 2 là thành công, 1 là thất bại. 
 
 kết quả trả về nếu thành công  
 ```
@@ -80,9 +80,9 @@ nếu thành công, kết quả trả về dạng
 trong đó những thứ quan trọng như `exp` sẽ cho ta biết ngày hết hạn, `trangthai` sẽ cho biết trạng thái khoá hay hoạt động của host. `"trangthai": "1"` là đang hoạt động, 3 là bị xoá vĩnh viễn, 5 là chờ reset, 6 là đã hoàn tiền, 2 là đang tạm khoá do hết hạn hoặc vi phạm điều khoản, nếu vi phạm thì `"noidung"` sẽ có ghi. 
 
 # api gia hạn host
-API NÀY SẼ GIÚP BẠN GIA HẠN HOST THÊM 30 NGÀY KỂ TỬ NGÀY HẾT HẠN. <space>
-Lưu ý: Nếu host bị khoá do vi phạm thì sẽ không gia hạn được, và ngày hết hạn hiện tại phải còn dưới 10 ngày so với bây giờ!<space>
-khi mở khoá host nếu host đang bị tạm khoá do hết hạn thì sẽ tự mở ra.<space>
+API NÀY SẼ GIÚP BẠN GIA HẠN HOST THÊM 30 NGÀY KỂ TỬ NGÀY HẾT HẠN.  
+Lưu ý: Nếu host bị khoá do vi phạm thì sẽ không gia hạn được, và ngày hết hạn hiện tại phải còn dưới 10 ngày so với bây giờ!  
+khi mở khoá host nếu host đang bị tạm khoá do hết hạn thì sẽ tự mở ra.  
 gửi request tới link bên dưới và thay các thông tin của bạn vào
 ```
 https://dailysieure.net/dichvu/api-hosting/giahan.html?email=admin&key=123123&tranid=999999
