@@ -5,7 +5,7 @@ gửi request tới link bên dưới và thay email và key api của bạn
 ```
 https://dailysieure.net/dichvu/api-hosting/mua.html?email=admin@gmail.com&key=123123&tenmien=domain.com&goi=VN1
 ```
- status trả về 2 là thành công, 1 là thất bại. \\
+ status trả về 2 là thành công, 1 là thất bại.  
 
 kết quả trả về nếu thành công  
 ```
@@ -55,7 +55,7 @@ nếu thanh công, kết quả trả về dạng
 ```
 
 # api tra cứu thông tin host đã mua
-API NÀY SẼ GIÚP BẠN CHECK ĐƯỢC HOST TẠO CÓ LỖI HAY KHÔNG.\\
+API NÀY SẼ GIÚP BẠN CHECK ĐƯỢC HOST TẠO CÓ LỖI HAY KHÔNG.  
 gửi request tới link bên dưới và thay các thông tin của bạn vào
 ```
 https://dailysieure.net/dichvu/api-hosting/check.html?email=admin&key=123123&tranid=999999
