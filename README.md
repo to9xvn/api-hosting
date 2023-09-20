@@ -54,7 +54,7 @@ nếu thanh công, kết quả trả về dạng
 ]
 ```
 
-# api tra cứu thông tin host đã mua qua API
+# api tra cứu thông tin host đã mua
 API NÀY SẼ GIÚP BẠN CHECK ĐƯỢC HOST TẠO CÓ LỖI HAY KHÔNG
 gửi request tới link bên dưới và thay các thông tin của bạn vào
 ```
@@ -79,4 +79,31 @@ nếu thành công, kết quả trả về dạng
 ```
 trong đó những thứ quan trọng như `exp` sẽ cho ta biết ngày hết hạn, `trangthai` sẽ cho biết trạng thái khoá hay hoạt động của host. `"trangthai": "1"` là đang hoạt động, 3 là bị xoá vĩnh viễn, 5 là chờ reset, 6 là đã hoàn tiền, 2 là đang tạm khoá do hết hạn hoặc vi phạm điều khoản, nếu vi phạm thì `"noidung"` sẽ có ghi. 
 
+# api gia hạn host
+API NÀY SẼ GIÚP BẠN GIA HẠN HOST THÊM 30 NGÀY KỂ TỬ NGÀY HẾT HẠN
+Lưu ý: Nếu host bị khoá do vi phạm thì sẽ không gia hạn được, và ngày hết hạn hiện tại phải còn dưới 10 ngày so với bây giờ!
+khi mở khoá host nếu host đang bị tạm khoá do hết hạn thì sẽ tự mở ra.
+gửi request tới link bên dưới và thay các thông tin của bạn vào
+```
+https://dailysieure.net/dichvu/api-hosting/giahan.html?email=admin&key=123123&tranid=999999
+```
+nếu thành công, kết quả trả về dạng 
+```
+{
+  "status": "2",
+  "msg": "Đã gia hạn thành công thêm 30 ngày kể từ ngày hết hạn!",
+  "info": {
+    "tk": "a1695184940",
+    "domain": "domain.com",
+    "gia": "10000",
+    "ip": "103.153.64.233",
+    "tranid": "116951849407099",
+    "trangthai": "2",
+    "noidung": "",
+    "exp": "1695183414",
+    "expnew": "1697775414"
+  }
+}
+```
+trong đó những thứ quan trọng như `exp` sẽ cho ta biết ngày hết hạn cũ, `expnew` sẽ là ngày hết hạn mới!
 
